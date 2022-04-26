@@ -10,7 +10,7 @@ Päätin kokeilla toteuttaa https://www.geeksforgeeks.org/sudoku-backtracking-7/
 
 Generaattori luo ensin 2d-taulukon, jonka sisällä jokaisessa ruudussa on -1 arvo
 
-Taulukon luoonnin jälkeen tehdään satunnaiset luvut kolmeen eri laatikkoon (ylävasen, keskimmäinen ja alaoikea).
+Taulukon luoonnin jälkeen tehdään satunnaiset luvut kolmeen eri laatikkoon (ylävasen, keskimmäinen ja alaoikea). (laatikko = 3x3 alue)
 
 esim.
 - [1, 0, 5, -1, -1, -1, -1, -1, -1]
@@ -32,7 +32,7 @@ Ratkaisu tehdään niin, että Solver etsii ensimmäiseksi tyhjän ruudun (ruudu
 Ensimmäisen ruudun löytymisen jälkeen aloitetaan looppi, jossa tarkastetaan yksitellen numeroita ja validoidaan:
    
 - onko rivillä kyseistä numeroa
-- onko sarakkeessa kyseistä numeroa
+- onko rivin sarakkeissa kyseistä numeroa
 - onko laatikossa kyseistä numeroa
 
 Validoinnin jälkeen kokeillaan seuraavaa numeroa (jos joku validoinneista ei mennyt läpi) tai merkitään numero ruutuun ja siirrytään eteenpäin.
