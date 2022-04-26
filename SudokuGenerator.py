@@ -22,6 +22,4 @@ class SudokuGenerator:
     def generate_sudoko(self):
         self.randomize_squares()
         Solver(self.grid)
-        pass
-
-
+        # pass
