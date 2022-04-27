@@ -1,6 +1,10 @@
 # Sudoku Generaattori
 
-Tehtävänä oli tehdä algoritmi, jolla generoidaan sudokuun taulukko.
+Tehtävänä oli tehdä algoritmi, jolla generoidaan sudokuun taulukko. Python ei ole vahvin kieleni, mutta päätin nyt käyttää sitä kun sitä on kurssilla käytetty eniten ja saman algoritmin voi toteuttaa helposti millä tahansa muullakin kielellä kun sitä varten ei tarvinnut asentaa mitään ylimääräisiä paketteja. 
+
+Keskityin tehtävässä vain algoritmin toimintaan, joten koodin toteutus ei ole kovin tarkkaan mietittyä.
+
+## Toimintatapa
 
 Yritin aluksi suorittaa tehtävää yksinkertaisemmin ilman apukeinoja, mutta totesin jokaisen kokeilemani ratkaisun kaatuvan bugeihin, joten hain mallia muualta.
 
