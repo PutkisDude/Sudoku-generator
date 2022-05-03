@@ -1,7 +1,6 @@
 
 
 class Solver:
-
     def __init__(self, grid : list):
         self.grid = grid
         self.solve()
@@ -17,7 +16,7 @@ class Solver:
         return False # ei tyhjiä ruutuja
 
 
-    def valid_cell(self, row, col, number):
+    def valid_cell(self, row, col, number) -> bool:
         # Tarkistaa onko numero jo rivillä
         if number in self.grid[row]:
             return False

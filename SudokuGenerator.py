@@ -1,10 +1,12 @@
 import random
+import copy
 
 from solver import Solver
 
 class SudokuGenerator:
     def __init__(self):
-        self.grid = [[-1 for x in range(9)] for i in range(9)]
+        self.grid = []
+        self.solved = []
         self.generate_sudoko()
 
     # Random generoi ensimmäiset laatikot
@@ -27,7 +29,9 @@ class SudokuGenerator:
             self.grid[row][column] = -1
 
     def generate_sudoko(self):
+        self.grid = [[-1 for x in range(9)] for i in range(9)]
         self.randomize_squares()
         Solver(self.grid)
+        self.solved = copy.deepcopy(self.grid)
         # self.remove_random_cells(50)
         # pass
