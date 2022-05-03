@@ -95,6 +95,8 @@ En tehnyt sudokusta pelattavaa versiota, mutta sen saa helposti liitettyä pelil
 - Solver(olio.grid) # ratkaisee taulukon
 
 ## Testit
-Tein unit testit, jotka varmistaa taulun olevan oikean kokoinen ja jokaiselta riviltä löytyy kaikki numerot.
+Tein unit testit, jotka varmistavat taulun olevan oikean kokoinen ja jokaiselta riviltä löytyy kaikki numerot.
+
+Kolmannessa testissä sudoku tekee taulukon, poistaa siitä lukuja ja koittaa ratkaista sen uudestaan, jonka jälkeen testi vertaa sudokua alkuperäiseen. Testi ei mene läpi joka kerta, koska Solver on löytänyt toisen ratkaisun sudokuun, joka oli kuitenkin hyväksyttävä tulos eli testissä on virhe eikä generaattorissa.
 
 Generaattorin aika heittelee reippaasti, koska osa kentästä on satunnaisesti generoitu, mutta loput siitä pitää ratkaista, joten nopeus riippuu satunnaisista luvuista. Kokeilin generoida 100 sudokua kerralla, useamman kerran ja suoritus heitteli noin 0,7 - 3,8 sekunnin välillä

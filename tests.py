@@ -16,6 +16,7 @@ class TestSudokuGenerator(unittest.TestCase):
             for number in range(1,10):
                 self.assertTrue(number in sudoku.grid[row])
 
+    # Fail sometimes but it's fine, just different solution
     def test_solver(self):
         sudoku.remove_random_cells(50) #remove 50 numbers
         Solver(sudoku.grid) # solve it again
