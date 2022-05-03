@@ -12,7 +12,7 @@ class SudokuGenerator:
     def randomize_squares(self):
         for box in range(3):
             num = box *3
-            possible_numbers = [0,1,2,3,4,5,6,7,8]
+            possible_numbers = [1,2,3,4,5,6,7,8,9]
             for row in range(num, num +3):
                 for col in range(num, num+3):
                     random_number = random.choice(possible_numbers)
@@ -29,5 +29,5 @@ class SudokuGenerator:
     def generate_sudoko(self):
         self.randomize_squares()
         Solver(self.grid)
-        self.remove_random_cells(50)
+        # self.remove_random_cells(50)
         # pass

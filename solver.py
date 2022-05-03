@@ -49,7 +49,7 @@ class Solver:
             row = l[0]
             col = l[1]
 
-            for number in range(9):
+            for number in range(1,10):
 
                 if(self.valid_cell(row, col, number)):
                     self.grid[row][col] = number
